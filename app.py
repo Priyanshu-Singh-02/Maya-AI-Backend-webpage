@@ -38,7 +38,7 @@ def ask_maya():
             
         # Gemini Model call kar rahe hain
         model = genai.GenerativeModel(
-            model_name="gemini-1.5-flash",
+            model_name="gemini-3.1",
             system_instruction=MAYA_PERSONALITY
         )
         
