@@ -17,6 +17,10 @@ MAYA_PERSONALITY = (
 
 
 GEMINI_API_KEY = os.environ.get("GEMINI_API_KEY", "YOUR_GEMINI_API_KEY_HERE")
+
+if not api_key:
+    print("Error: API Key nahi mili!)
+else:         
 genai.configure(api_key=GEMINI_API_KEY)
 
 @app.route('/')
